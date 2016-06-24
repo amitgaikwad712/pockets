@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ICICI Pocket app</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="col-xs-2 no-padding">
+      <!-- Navigation -->
+      <nav id="sidebar-wrapper">
+        <input type="checkbox" id="menuBtn" />  
+        <label class="menu-button" for="menuBtn"></label>
+        <label class="menu-close" for="menuBtn"></label> 
+        <div class="menu">
+          <div class="menu-container">
+            <nav>
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="login.html">Log out</a></li>
+              </ul>
+            </nav>  
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-8">
+      <h1> Pockets </h1>
+    </div>
+
+    <div class="col-xs-2 no-padding" data-toggle="modal" data-target=".bd-example-modal-sm">
+      <button class="notifications">
+        <img src="images/icons/notifications.svg" />
+      </button>
+      <div class="notifications-count"> 
+        <span>2</span> 
+      </div>
+    </div>
+  </header>
+
+  <section class="statement-section">
+    <div class="chart-section">
+      <div id="statement-graph" style="height: 60vh;margin:-50px auto -10px auto; width:100%;float:left;text-align: center;display: table;"></div>
+    </div>
+    <div class="month-statement">
+      <section class="operations">
+        <div class="gallery">
+          <div class="gallery-cell active">
+            <span onClick="activeMonth(this)">Jan</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Feb</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Mar</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Apr</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">May</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">June</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">July</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Aug</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Sep</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Oct</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Nov</span>
+            <div class="active-dots"></div>
+          </div>
+          <div class="gallery-cell">
+            <span onClick="activeMonth(this)">Dec</span>
+            <div class="active-dots"></div>
+          </div>
+        </div>
+      </section>
+      <section id="statement-id" class="statement-containt">
+        <ul>
+          <li class="row1">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Rent or mortgage </div>
+            <div class="col-xs-3"> 30 Apr </div>
+            <div class="col-xs-3 text-right"> 4,500.00 </div>
+          </li>
+          <li class="row2">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Central </div>
+            <div class="col-xs-3"> 29 Apr </div>
+            <div class="col-xs-3 text-right"> 1,100.00 </div>
+          </li>
+          <li class="row6">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> BreakFast & Lunch </div>
+            <div class="col-xs-3"> 28 Apr </div>
+            <div class="col-xs-3 text-right"> 1,800.00 </div>
+          </li>
+          <li class="row1">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Electric Bill </div>
+            <div class="col-xs-3"> 23 Apr </div>
+            <div class="col-xs-3 text-right"> 700.00 </div>
+          </li>
+          <li class="row2">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> WestSide </div>
+            <div class="col-xs-3"> 16 Apr </div>
+            <div class="col-xs-3 text-right"> 1,500.00 </div>
+          </li>
+          <li class="row1">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Internet Bill </div>
+            <div class="col-xs-3"> 13 Apr </div>
+            <div class="col-xs-3 text-right"> 1,000.00 </div>
+          </li>
+          <li class="row2">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Shoppers Stop </div>
+            <div class="col-xs-3"> 08 Apr </div>
+            <div class="col-xs-3 text-right"> 1,200.00 </div>
+          </li>
+          <li class="row3">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Movie(Captain America) </div>
+            <div class="col-xs-3"> 06 Apr </div>
+            <div class="col-xs-3 text-right"> 1,300.00 </div>
+          </li>
+          <li class="row11">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Sinhgad Trek  </div>
+            <div class="col-xs-3"> 05 Apr </div>
+            <div class="col-xs-3 text-right"> 1,600.00 </div>
+          </li>
+          <li class="row6">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Dinner at Blue Nile </div>
+            <div class="col-xs-3"> 04 Apr </div>
+            <div class="col-xs-3 text-right"> 2,300.00 </div>
+          </li>
+          <li class="row2">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Shoppers Stop </div>
+            <div class="col-xs-3"> 04 Apr </div>
+            <div class="col-xs-3 text-right"> 500.00 </div>
+          </li>
+          <li class="row10">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Medicines </div>
+            <div class="col-xs-3"> 02 Apr </div>
+            <div class="col-xs-3 text-right"> 500.00 </div>
+          </li>
+          <li class="row1">
+            <div class="select-statement"> </div>
+            <div class="col-xs-6"> Fuel </div>
+            <div class="col-xs-3"> 02 Apr </div>
+            <div class="col-xs-3 text-right"> 500.00 </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </section>
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Only "View Statement" and "Favourites" are active in this version.</h4>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/highcharts.js"></script>
+  <script src="js/exporting.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

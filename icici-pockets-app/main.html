@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>ICICI Pocket app</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="col-xs-2 no-padding">
+      <!-- Navigation -->
+      <nav id="sidebar-wrapper">
+        <input type="checkbox" id="menuBtn" />  
+        <label class="menu-button" for="menuBtn"></label>
+        <label class="menu-close" for="menuBtn"></label> 
+        <div class="menu">
+          <div class="menu-container">
+            <nav>
+              <ul>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="login.html">Log out</a></li>
+              </ul>
+            </nav> 
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="col-xs-8">
+      <h1> Pockets </h1>
+    </div>
+
+    <div class="col-xs-2 no-padding" data-toggle="modal" data-target=".bd-example-modal-sm">
+      <button class="notifications">
+        <img src="images/icons/notifications.svg" />
+      </button>
+      <div class="notifications-count"> 
+        <span>2</span> 
+      </div>
+    </div>
+  </header>
+
+  <section class="user-pocket-section">
+    <div class="col-xs-2 col-lg-3 no-padding">
+      <div onClick="viewstatement();" class="col-xs-12 statement no-padding">
+        <button>
+          <img src="images/icons/statement.svg" />
+        </button>
+        <span>View Statement</a></span>
+      </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-sm-8 col-xs-8">
+      <div class="col-lg-4 col-md-12 col-sm-8 col-xs-12 progress-cricle">
+        <div class="circleGraphic1">sds sds</div>
+        <div class="last-updated" >
+          <span> Added <br /> 5000 <br />on 25 May </span>
+        </div>
+      </div>
+    </div>
+     <div class="col-xs-2 col-lg-3 no-padding">
+      <div class="col-xs-12 addmoney no-padding" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button >
+          <img src="images/icons/addmoney.svg" />
+        </button>
+        <span>Add Money</span>
+      </div>
+    </div>
+    <div class="user-card-details">
+      <div class="user-name">
+        Swapnil kadam
+      </div>
+      <div class="user-card">
+        1477-4442-3333-4456
+      </div>
+    </div>
+  </section>
+
+  <section class="operations">
+    <div class="gallery">
+      <div class="gallery-cell send-money" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/send-money.svg" />
+        </button>
+        <span>Send Money</span>
+      </div>
+      <div class="gallery-cell physical-card" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/physical-card.svg" />
+        </button>
+        <span>Apply for Physical Card</span>
+      </div>
+      <div class="gallery-cell shopping-cart" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/shopping-cart.svg" />
+        </button>
+        <span>Shop</span>
+      </div>
+      <div class="gallery-cell recharge" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/recharge.svg" />
+        </button>
+        <span>Recharge</span>
+      </div>
+      <div class="gallery-cell m-visa" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/m-visa.svg" />
+        </button>
+        <span>Pay with mvisa</span>
+      </div>
+      <div class="gallery-cell send-money" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/send-money.svg" />
+        </button>
+        <span>Send Money</span>
+      </div>
+      <div class="gallery-cell physical-card" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/physical-card.svg" />
+        </button>
+        <span>Apply for Physical Card</span>
+      </div>
+      <div class="gallery-cell shopping-cart" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/shopping-cart.svg" />
+        </button>
+        <span>Shop</span>
+      </div>
+      <div class="gallery-cell recharge" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/recharge.svg" />
+        </button>
+        <span>Recharge</span>
+      </div>
+      <div class="gallery-cell m-visa" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/m-visa.svg" />
+        </button>
+        <span>Pay with mvisa</span>
+      </div>
+      <div class="gallery-cell send-money" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/send-money.svg" />
+        </button>
+        <span>Send Money</span>
+      </div>
+      <div class="gallery-cell physical-card" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/physical-card.svg" />
+        </button>
+        <span>Apply for Physical Card</span>
+      </div>
+      <div class="gallery-cell shopping-cart" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/shopping-cart.svg" />
+        </button>
+        <span>Shop</span>
+      </div>
+      <div class="gallery-cell recharge" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/recharge.svg" />
+        </button>
+        <span>Recharge</span>
+      </div>
+      <div class="gallery-cell m-visa" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/icons/m-visa.svg" />
+        </button>
+        <span>Pay with mvisa</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="offers-list">
+    <h2> Offers </h2>
+    <div class="offers">
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/bms.png" />
+        </button>
+        <span>Bookmyshow 20% cashback</span>
+      </div>
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/dominos_logo.png" />
+        </button>
+        <span>Dominos 30% cashback</span>
+      </div>
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/oyo_logo.png" />
+        </button>
+        <span>Oyo 60% cashback</span>
+      </div>
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/yatra_logo.png" />
+        </button>
+        <span>Yatra 15% cashback</span>
+      </div>
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/bms.png" />
+        </button>
+        <span>Bookmyshow 20% cashback</span>
+      </div>
+      <div class="offers-cell" data-toggle="modal" data-target=".bd-example-modal-sm">
+        <button>
+          <img src="images/dominos_logo.png" />
+        </button>
+        <span>Dominos 30% cashback</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="favourites">
+    <h2> Favourites </h2>
+    <ul>
+      <li>
+       <div class="favourites-list">
+          <button class="add-favourite" onClick="showToolTip(this)"><img src="images/icons/add-button-white.svg" /></button>
+          <span> Add New </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/me.png" /></button>
+          <span> Me </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/milkman.png" /></button>
+          <span> Paperwala </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button class="fd-button" onClick="showToolTip(this)"><img src="images/icons/FD.png" /></button>
+          <span> FD </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)"><img src="images/paperwala.png" /></button>
+          <span> Milkman </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/vodafone.png" /></button>
+          <span> Vodafone </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/icon-bill.png" /></button>
+          <span> Bill </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)"><img src="images/ola.png" /></button>
+          <span> Ola cab </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/kfc.png" /></button>
+          <span> KFC </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)"><img src="images/bookmyshow.png" /></button>
+          <span> Bookmyshow </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)"><img src="images/d2h.png" /></button>
+          <span> DTH </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)"><img src="images/bigbasket.png" /></button>
+          <span> Big basket </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span class="favouritelist"> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span class="favouritelist"> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span class="favouritelist"> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span class="favouritelist"> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span class="favouritelist"> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+      <li>
+       <div class="favourites-list">
+          <button onClick="showToolTip(this)" ><img src="images/shoppers-stop.png" /></button>
+          <span> Shoppers <br />Stop </span>
+       </div>
+       <div class="social-list">
+         <ul>
+            <li> <img src="images/icons/view-profile.svg" /> <span> ViewProfile </span></li>
+            <li> <img src="images/icons/send-money01.svg" /> <span> Send Money </span> </li>
+            <li> <img src="images/icons/request-money.svg" /><span> Request Money </span></li>
+            <li> <img src="images/icons/send-gift.svg" /> <span> Send Gift </span> </li>
+            <li> <img src="images/icons/recharge-mobile.svg" /> <span> Recharge Mobile </span></li>
+         </ul>
+       </div>
+      </li>
+  </section>
+
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Only "View Statement" and "Favourites" are active in this version.</h4>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <!-- jQuery -->
+  <script src="cordova.js"></script>
+  <script src="js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/highcharts.js"></script>
+  <script src="js/exporting.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="js/main.js"></script>
+   <script type="text/javascript">
+    window.onload=function(){
+      $('.circleGraphic1').circleGraphic({'color':'#fff'});
+    document.addEventListener("deviceready", onDeviceReady, false);
+    }
+  </script>
+</body>
+
+</html>
